@@ -31,7 +31,7 @@ spring:
 
 app:
   cors:
-    allowed-origins: https://localhost:5173
+    allowed-origins: https://likeat-frontend-e6sctoizb-aggelossakell-gmailcoms-projects.vercel.app/
 
 application:
   security:
