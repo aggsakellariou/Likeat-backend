@@ -19,6 +19,7 @@ public class RestaurantController {
     private final RestaurantService restaurantService;
 
     // Public endpoints
+    @CrossOrigin(origins = "https://likeat-frontend.onrender.com")
     @GetMapping("/home")
     public List<RestaurantDTO> getAllRestaurants() {
         return restaurantService.getAllRestaurants();
