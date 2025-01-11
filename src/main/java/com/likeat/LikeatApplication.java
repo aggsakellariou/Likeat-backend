@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 import static com.likeat.model.Role.*;
 
 @SpringBootApplication
-public class DemoApplication {
+public class LikeatApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(LikeatApplication.class, args);
     }
 
 //    @Bean

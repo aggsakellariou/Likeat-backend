@@ -15,13 +15,11 @@ public class AuthenticationController {
 
     private final AuthenticationService service;
 
-    @CrossOrigin(origins = "https://likeat-frontend.onrender.com")
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(@RequestBody RegisterRequest request) {
         return ResponseEntity.ok(service.register(request));
     }
 
-    @CrossOrigin(origins = "https://likeat-frontend.onrender.com")
     @PostMapping("/authenticate")
     public ResponseEntity<AuthenticationResponse> authenticate(@RequestBody AuthenticationRequest request) {
         return ResponseEntity.ok(service.authenticate(request));
